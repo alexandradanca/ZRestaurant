@@ -204,7 +204,7 @@ function getCategoryItems(menus, categories){
 function displayManuItems(menuItems){
     let displayMenu = menuItems.map((item)=> {
         return `<article class="menu-item">
-                        <img src=${item.img}/>
+                        <img src=${item.img}>
                         <div>
                             <div class="item-info">
                                 <h3 class="title">${item.title}</h3>
