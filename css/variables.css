@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+:root {
+    --bgr-color:#222222;
+    --black-color:#000000;
+
+    --h1-color:#FAF3E1;
+    --h2-color:#FF6E1F;
+    --h3-color:#F5E6C5;
+
+    --title-font: 'Merriweather', serif;
+    --txt-font: 'Open Sans', sans-serif;
+
+    --logo-f-size: 2rem;
+    --h1-f-size: 2.5rem;
+    --h2-f-size: 2rem;
+    --p-f-size: 1rem;
+
+    --logo-f-size-dsktp: 2.5rem;
+    --h1-f-size-dsktp: 3rem;
+    --h2-f-size-dsktp: 2.5rem;
+    --p-f-size-dsktp: 1.123rem;
+
+    --h1-f-size-tblt: 2.5rem;
+    --h2-f-size-tblt: 1.7rem;
+    --h3-f-size-tblt: 1.2rem;
+    --p-f-size-tblt: 1.2rem;
+    
+    --h1-f-size-mbl: 2rem;
+    --h2-f-size-mbl: 1.75rem;
+    --p-f-size-mbl: 1rem;
+
+    --h1-f-size-mbl-lds: 1.5rem;
+    --h2-f-size-mbl-lds: 1rem;
+    --p-f-size-mbl-lds: 0.8rem;
+
+}

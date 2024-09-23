@@ -1,0 +1,156 @@
+@import url('../variables.css');
+
+@media screen and (577px <= width <= 1120px){
+    .nav-container > h1{
+        font-size: var(--h3-f-size-tblt);
+    }
+
+    .menu-container > ul > li > a{
+        font-size: var(--h3-f-size-tblt);
+    }
+
+    .social-container{
+        display: none;
+    }
+
+    .menu-container > ul {
+        justify-content:space-evenly;
+    }
+
+    .logo-name {
+        width: 20%;
+    }
+    .menu-container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .expand-nav{
+        display: block;
+    }
+
+    .social-container{
+        display: none;
+    }
+
+    .nav-container{
+        height: 7vh;
+        padding: 0 5vw;
+        width: 90vw;
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    .nav-container > h1{
+        font-size: var(--logo-f-size-mbl);
+    }
+
+    .menu-container{
+        width: 0;
+    }
+
+    .menu-container>ul {
+        background-color: var(--bgr-color);
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        position: fixed;
+        top: 7vh;
+        left: 100%;
+        transition: 0.7s ease-in;
+    }
+
+    .menu-container>ul.menu-active {
+        left: 0;
+    }
+
+    .menu-container>ul.menu-active>li>a{
+        font-size: var(--p-f-size-dsktp);
+    }
+
+    .btn_clicked {
+        content: url(../../images/spoon-and-fork-o.png);
+    }
+
+    .logo-name {
+        width: 40%;
+    }
+    .menu-container {
+        width: 40%;
+    }
+
+    .menu-container > ul > li > a {
+        padding: 5vh 0;
+    }
+}
+
+@media (orientation: landscape) and (max-width:900px){
+    .nav-container{
+        height: 13vh;
+    }
+
+    .social-container{
+        display: none;
+    }
+
+    .logo-name {
+        width: 20%;
+    }
+    .menu-container {
+        width: 60%;
+    }
+    
+    .expand-nav{
+        display: block;
+    }
+
+    .menu-container>ul {
+        background-color: var(--bgr-color);
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        position: fixed;
+        top: 14vh;
+        left: 100%;
+        transition: 0.7s ease-in;
+    }
+
+    .menu-container>ul.menu-active {
+        left: 0;
+    }
+
+    .menu-container>ul.menu-active>li>a{
+        font-size: var(--p-f-size-dsktp);
+    }
+
+    .btn_clicked {
+        content: url(../../images/spoon-and-fork-o.png);
+    }
+
+    .logo-name {
+        width: 40%;
+    }
+    .menu-container {
+        width: 40%;
+    }
+
+}
+
+@media (orientation: landscape) and (min-width: 1024px){
+    .nav-container > h1{
+        font-size: var(--h3-f-size-tblt);
+    }
+}
