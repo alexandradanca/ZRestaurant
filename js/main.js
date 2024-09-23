@@ -4,7 +4,7 @@ const menu = [
         title: "Blueberry pancake",
         category: "Breakfast",
         price: 10,
-        img: "./../images/menu/Breakfast/pancake.jpg",
+        img: "/images/menu/Breakfast/pancake.jpg",
         desc: "Curabitur sodales turpis sapien, quis commodo ipsum porttitor eu. Donec fringilla orci et condimentum pellentesque.",
     },
     {
