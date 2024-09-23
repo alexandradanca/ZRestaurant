@@ -63,8 +63,6 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-attachment: fixed;
-    border-image:stretch 0 linear-gradient( #0003, #000);
 }
 
 .welcome-container > h1, .welcome-container > p{
