@@ -1,1 +1,34 @@
 @import url('../variables.css');
+
+@media screen and (max-width: 576px) {
+    footer {
+        height: fit-content;
+    }
+
+    .f-container {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items:start;
+        justify-content: left;
+        row-gap: 2vh;
+    }
+
+    .f-container > div {
+        width: 100%;
+    }
+
+    .f-container>div:not(:last-child):after {
+        display: none;
+    }
+
+    .flex {
+        height: fit-content;
+        width: 100%;
+    }
+
+
+    .social-c {
+        padding: 1vh 1.3vw;
+    }
+}

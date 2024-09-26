@@ -1,38 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
 
 :root {
-    --bgr-color:#222222;
-    --black-color:#000000;
+  --bgr-color: #222222;
+  --black-color: #000000;
 
-    --h1-color:#FAF3E1;
-    --h2-color:#FF6E1F;
-    --h3-color:#F5E6C5;
+  --h1-color: #faf3e1;
+  --h2-color: #ff6e1f;
+  --h3-color: #f5e6c5;
 
-    --title-font: 'Merriweather', serif;
-    --txt-font: 'Open Sans', sans-serif;
+  --title-font: "Merriweather", serif;
+  --txt-font: "Open Sans", sans-serif;
 
-    --logo-f-size: 2rem;
-    --h1-f-size: 2.5rem;
-    --h2-f-size: 2rem;
-    --p-f-size: 1rem;
+  --logo-f-size: 2rem;
+  --h1-f-size: 2.5rem;
+  --h2-f-size: 2rem;
+  --p-f-size: 1rem;
 
-    --logo-f-size-dsktp: 2.5rem;
-    --h1-f-size-dsktp: 3rem;
-    --h2-f-size-dsktp: 2.5rem;
-    --p-f-size-dsktp: 1.123rem;
+  --logo-f-size-dsktp: 2.5rem;
+  --h1-f-size-dsktp: 3rem;
+  --h2-f-size-dsktp: 2.5rem;
+  --p-f-size-dsktp: 1.123rem;
 
-    --h1-f-size-tblt: 2.5rem;
-    --h2-f-size-tblt: 1.7rem;
-    --h3-f-size-tblt: 1.2rem;
-    --p-f-size-tblt: 1.2rem;
-    
-    --h1-f-size-mbl: 2rem;
-    --h2-f-size-mbl: 1.75rem;
-    --p-f-size-mbl: 1rem;
+  --h1-f-size-tblt: 2.5rem;
+  --h2-f-size-tblt: 1.7rem;
+  --h3-f-size-tblt: 1.2rem;
+  --p-f-size-tblt: 1.2rem;
 
-    --h1-f-size-mbl-lds: 1.5rem;
-    --h2-f-size-mbl-lds: 1rem;
-    --p-f-size-mbl-lds: 0.8rem;
+  --h1-f-size-mbl: 2rem;
+  --h2-f-size-mbl: 1.75rem;
+  --p-f-size-mbl: 1rem;
 
+  --h1-f-size-mbl-lds: 1.5rem;
+  --h2-f-size-mbl-lds: 1rem;
+  --p-f-size-mbl-lds: 0.8rem;
+}
+
+:root{
+  --footer-w-c: 50vw;
+  --footer-p-top-btm: 5vh;
+  --footer-h-c: 40vh;
+  --footer-w-c-child: calc((var(--footer-w-c) - (var(--footer-w-c-gap)*2))/3);
+  --footer-w-c-gap: 2vw;
+  --footer-w-half-gap:calc(var(--footer-w-c-gap) / 2);
+  --footer-h-total: calc((var(--footer-p-top-btm)* 2) + var(--footer-h-c));
+  --footer-left-margin-border: calc(var(--footer-w-c-child) + var(--footer-w-half-gap));
+
+  --h-h2-percent: 0.2;
+  --h-c-percent: calc(1 - var(--h-h2-percent));
+  --footer-h-h2: calc(var(--footer-h-c) * var(--h-h2-percent));
+  --footer-h-c2: calc(var(--footer-h-c) * var(--h-c-percent));
+
+  --footer-p-f-size: 0.8rem;
+  --footer-h2-f-size: 1.2rem;
+}
+
+@media (577px <= width <= 1120px) {
+  :root {
+      --footer-w-c: 80vw;
+      --footer-w-c-gap: 4vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  :root{
+    --footer-w-c: 90vw;
+    --footer-w-c-gap: 10vw;
+    --h-h2-percent: 0.1;
+  }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  background-color: var(--bgr-color);
+  overflow-x: hidden;
+}
+
+h1 {
+  line-height: 2;
+  color: var(--h1-color);
+  font-family: var(--title-font);
+  font-size: var(--h1-f-size);
+  text-transform: capitalize;
+}
+
+h2 {
+  line-height: 2;
+  color: var(--h2-color);
+  font-family: var(--title-font);
+  font-size: var(--h2-f-size);
+  text-align: justify;
+  text-transform:capitalize;
+}
+
+p, label, button {
+  line-height: 1.5;
+  color: var(--h3-color);
+  font-family: var(--txt-font);
+  font-size: var(--p-f-size);
+  text-align: justify;
+}
+
+h3 {
+  line-height: 1.5;
+  color: var(--h3-color);
+  font-family: var(--title-font);
+  font-size: var(--p-f-size);
+  text-align: start;
+  margin-top: 2vh;
+}
+
+hr {
+  width: 10vw;
+  color: var(--h3-color);
+  margin: 2vh auto;
+  border-top: 0.5vh solid;
+}
+
+ul,
+li {
+  list-style-type: none;
 }

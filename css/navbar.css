@@ -1,89 +1,86 @@
-@import url('variables.css');
-
-ul, li {
-    list-style-type: none;
-}
+@import url("variables.css");
 
 
 .flex-row {
-    display: flex;
-    flex-direction: row; 
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.expand-nav{
-    display: none;
+.expand-nav {
+  display: none;
 }
 
-.nav-container{
-    background-color: var(--black-color);  
-    position: fixed;
-    top: 0;
-    width: 94vw;
-    padding: 1vh 3vw;
-    height: 6vh;
-    justify-content: space-between;   
-    z-index: 1;
+.nav-container {
+  background-color: var(--black-color);
+  position: fixed;
+  top: 0;
+  width: 94vw;
+  padding: 1vh 3vw;
+  height: 6vh;
+  justify-content: space-between;
+  z-index: 1;
 }
 
 .nav-container > h1 {
-    color:var(--h1-color);
-    font-family: var(--title-font);
-    font-size: var(--logo-f-size);
-    text-transform: capitalize;
+  color: var(--h1-color);
+  font-family: var(--title-font);
+  font-size: var(--logo-f-size);
+  text-transform: capitalize;
 }
 
 .nav-container > h1 > em {
-    text-transform: uppercase;
-    color: var(--h2-color);
+  text-transform: uppercase;
+  color: var(--h2-color);
 }
 
 .menu-container > ul > li > a {
-    font-family: var(--title-font);
-    font-size: var(--p-f-size);
-    color: var(--h1-color);
-    text-decoration: none;
-    font-weight: 700;
-    letter-spacing: 0.1vw;
-    text-transform: capitalize;
-    transition: all 0.6s;
+  font-family: var(--title-font);
+  font-size: var(--p-f-size);
+  color: var(--h1-color);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.1vw;
+  text-transform: capitalize;
+  transition: all 0.6s;
 }
 
 .menu-container > ul > li > a:hover {
-    color: var(--h2-color);
+  color: var(--h2-color);
 }
 
-.logo-name , .social-container{
-    width: 15%;
+.logo-name,
+.social-container {
+  width: 15%;
 }
 
 .menu-container {
-    width: 60%;
+  width: 60%;
 }
 
-.menu-container > ul{
-    gap: 5vh;
-    justify-content: center;
+.menu-container > ul {
+  gap: 5vh;
+  justify-content: center;
 }
 
 .social-container {
-    gap: 3vh;
-    justify-content:end;
+  gap: 3vh;
+  justify-content: end;
 }
 
-.social-container > a > img, .expand-nav {
-height: 1.5rem;
+.social-container > a > img,
+.expand-nav {
+  height: 1.5rem;
 }
 
 #facebook-icon:hover {
-    content: url(../images/social-icons/facebook-o.png);
+  content: url(../images/icons/facebook-o.png);
 }
 
 #insta-icon:hover {
-    content: url(../images/social-icons/instagram-o.png);
+  content: url(../images/icons/instagram-o.png);
 }
 
 #whatsapp-icon:hover {
-    content: url(../images/social-icons/whatsapp-o.png);
+  content: url(../images/icons/whatsapp-o.png);
 }
-

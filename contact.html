@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link href="./css/contact.css" rel="stylesheet" />
+    <link href="./css/responsive/contact-responsive.css" rel="stylesheet" />
+    <link href="./css/navbar.css" rel="stylesheet" />
+    <link href="./css/responsive/navbar-responsive.css" rel="stylesheet" />
+    <link href="./css/footer.css" rel="stylesheet" />
+    <link href="./css/responsive/footer-responsive.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div id="navbar-placeholder"></div>
+    </header>
+
+    <main>
+      <div class="h-container">
+        <div class="h-txt">
+          <h3></h3>
+          <h1>contact</h1>
+        </div>
+        <div class="h-bgr"></div>
+      </div>
+
+      <div class="contact-container flex-r">
+        <div class="ctc-info flex-c">
+          <div class="info flex-r">
+            <img src="./images/icons/maps.png" class="info-img">
+            <div class="info-txt">
+              <h3>Our address</h3>
+              <span>Z Restaurant</span>
+              <p>Lorem ipsum dolor sit ametscing elit.</p>
+              <p>Program:</p>
+              <p>Monday-Friday: 08:00-23:00</p>
+            </div>
+          </div>
+          <div class="info flex-r">
+            <img src="./images/icons/email.png" class="info-img">
+            <div class="info-txt">
+              <h3>Email</h3>
+              <a href="#">emailexample@gmail.com</a>
+            </div>
+          </div>
+          <div class="info flex-r">
+            <img src="./images/icons/phone.png" class="info-img">
+            <div class="info-txt">
+              <h3>Telephone number</h3>
+              <a href="tel:123-456-7890">123-456-7890</a>
+            </div>
+          </div>
+        </div>
+        <div class="ctc-msg flex-c">
+          <div class="ctc-msg-h">
+            <h2>send a message</h2>
+          </div>
+          <form id="form-contact" class="ctc-msg-lbl">
+            <label for="name">Name</label>
+            <input id="name" type="text" autocomplete="name"/>
+            <label for="email">Email</label>
+            <input id="email" type="text" autocomplete="email"/>
+            <label for="subject">Subject</label>
+            <input id="subject" type="text"/>
+            <label for="message">Your message</label>
+            <textarea id="message" name="Text1" rows="7"></textarea>
+            <div>
+              <input type="checkbox" id="scales" name="scales"/>
+              <label for="scales">I agree to the Terms and Conditions.</label>
+            </div>
+            <button class="btn-send">send</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="location-container">
+        <h2>Our location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87781.3954837547!2d26.826459422011855!3d46.564130946448145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b570183882e30b%3A0x2659d504aae13301!2zQmFjxIN1!5e0!3m2!1sro!2sro!4v1727164093184!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </main>
+    
+    <div id="footer-placeholder"></div>
+    <script src="./js/loadFiles.js"></script>
+
+  </body>
+</html>

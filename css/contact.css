@@ -1,0 +1,180 @@
+@import url("variables.css");
+
+body {
+  background-color: var(--bgr-color);
+}
+
+.contact-container,
+.location-container {
+  height: 80vh;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.h-txt {
+  width: 80vw;
+  height: 30vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.h-bgr {
+  background-image: url(../images/bgr-image.jpg);
+  height: 50vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.flex-r {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+
+.flex-c {
+  display: flex;
+  flex-direction: column;
+}
+
+.ctc-info,
+.ctc-msg {
+  width: 25vw;
+}
+
+.ctc-info {
+  height: 80vh;
+  justify-content: center;
+}
+
+.ctc-info > .info {
+  justify-content: start;
+  align-items: start;
+  padding-bottom: 5vh;
+}
+
+.ctc-info > .info > .info-txt > h3 {
+  margin-top: 0;
+}
+
+.info-txt {
+  width: 90%;
+}
+
+.info > img {
+  width: 2vw;
+  height: 2vw;
+}
+
+.info-txt > span {
+    color: var(--h2-color);
+    font-family: var(--title-font);
+    font-size: var(--p-f-size);
+    font-weight: 900;
+}
+
+.info-txt > a {
+    color: var(--h3-color);
+}
+
+.ctc-msg {
+  background-color: var(--black-color);
+  height: 80vh;
+  padding: 4vh 2vw;
+  margin-top: -8vh;
+}
+
+.ctc-msg > input {
+  width: 50%;
+  margin-left: 2vw;
+}
+
+.ctc-msg-h {
+  height: 15vh;
+  align-content: center;
+}
+
+.ctc-msg-lbl {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ctc-msg-lbl > input,
+.ctc-msg-lbl > textarea {
+  background-color: var(--bgr-color);
+  border: 0;
+  color: var(--h3-color);
+  padding-left: 1vw;
+}
+.ctc-msg-lbl > textarea{
+    resize:none;
+}
+
+.ctc-msg-lbl > input:focus, .ctc-msg-lbl > textarea:focus{
+    outline: none;
+    box-shadow: 0 0 10px var(--h2-color);
+}
+
+.ctc-msg-lbl > input {
+  height: 4vh;
+  margin-bottom: 3vh;
+}
+
+.btn-send {
+  background-color: var(--bgr-color);
+  color: var(--h2-color);
+  padding: 1vh 1.5vw;
+  width: fit-content;
+  border: 0;
+
+  color: var(--h1-color);
+  text-decoration: none;
+  text-transform:uppercase;
+  letter-spacing: 0.1vw;
+  font-weight: bold;
+
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.btn-send:hover {
+    letter-spacing: 0.2vw;
+    background-color: var(--h2-color);
+    color: var(--bgr-color);
+    box-shadow: rgb(174, 174, 174) 0px 0px 10px 0px;
+}
+
+.btn-send:active {
+    box-shadow: rgb(174, 174, 174) 0px 0px 0px 0px;
+    transform: translateY(0.5vh);
+    transition: 100ms;
+}
+
+.location-container {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location-container > h2 {
+    height: 15vh;
+    align-content: center;
+}
+
+.location-container > iframe {
+    height: 65vh;
+    width: 100%;
+}
+
+
