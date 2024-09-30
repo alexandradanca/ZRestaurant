@@ -18,7 +18,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+
+.h-txt > h3, .h-txt > h3 > a {
+  line-height: 1.5;
+    color: var(--h3-color);
+    font-family: var(--txt-font);
+    font-size: var(--p-f-size);
+    text-align: justify;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#link-contact {
+  text-decoration: underline;
 }
 
 .h-bgr {
