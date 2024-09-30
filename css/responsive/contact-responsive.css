@@ -1,0 +1,64 @@
+@import url('../variables.css');
+
+
+@media screen and (max-width: 576px) {
+    .flex-r {
+        flex-direction: column;
+        gap: 0;
+        
+      }
+      .ctc-msg {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: fit-content;
+      }
+
+      .ctc-msg > * {
+        height: auto;
+        padding: 5vh 10vw;
+      }
+
+      .contact-container, .location-container {
+        height: auto;
+      }
+
+      .ctc-info {
+        height: fit-content;
+        padding-top: 5vh;
+      }
+
+      .info > img {
+        width: 5vw;
+        height: 5vw;
+        padding-bottom: 2vh;
+      }
+
+      #form-contact {
+        padding-top: 0;
+      }
+
+      .ctc-msg-lbl > input {
+        margin: 0;
+      }
+
+      #form-contact > * {
+        margin-bottom: 2vh;
+      }
+
+      #form-contact > .btn-send {
+        margin-bottom: 0;
+        padding: 1vh 5vw;
+      }
+
+      .location-container > h2 {
+        height: fit-content;
+        margin: 5vh 0;
+        align-content:start;
+        width: 100%;
+      }
+
+      .location-container > iframe {
+        height: 40vh;
+      }
+  }

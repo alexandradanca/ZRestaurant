@@ -27,8 +27,25 @@
         width: 100%;
     }
 
-
     .social-c {
         padding: 1vh 1.3vw;
+    }
+
+    .contact-container > h2 {
+        padding-bottom: 1vh;
+    }
+
+    .social-c {
+        padding: 1.5vh 4vw;
+        gap: 2vw;
+    }
+
+    .social-c > a > img {
+        height: 2vh;
+    }
+
+    .social-c a {
+        width: 4vh;
+        height: 4vh;
     }
 }

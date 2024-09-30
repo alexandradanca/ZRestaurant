@@ -36,7 +36,11 @@
   --p-f-size-mbl-lds: 0.8rem;
 }
 
-:root{
+:root {
+  --contact-w-c-child: 25vw;
+}
+
+:root {
   --footer-w-c: 50vw;
   --footer-p-top-btm: 5vh;
   --footer-h-c: 40vh;
@@ -59,6 +63,8 @@
   :root {
       --footer-w-c: 80vw;
       --footer-w-c-gap: 4vw;
+
+      --contact-w-c-child: 38vw;
   }
 }
 
@@ -67,6 +73,8 @@
     --footer-w-c: 90vw;
     --footer-w-c-gap: 10vw;
     --h-h2-percent: 0.1;
+
+    --contact-w-c-child: 100%;
   }
 }
 
@@ -78,6 +86,7 @@
 
 html {
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 body {

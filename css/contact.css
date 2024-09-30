@@ -45,7 +45,7 @@ body {
 
 .ctc-info,
 .ctc-msg {
-  width: 25vw;
+  width: var(--contact-w-c-child);
 }
 
 .ctc-info {
@@ -159,7 +159,7 @@ body {
 }
 
 .location-container {
-    width: 90vw;
+    width: 80vw;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -175,6 +175,14 @@ body {
 .location-container > iframe {
     height: 65vh;
     width: 100%;
+}
+
+a {
+  line-height: 1.5;
+  color: var(--h3-color);
+  font-family: var(--txt-font);
+  font-size: var(--p-f-size);
+  text-align: justify;
 }
 
 
