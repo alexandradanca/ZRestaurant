@@ -1,5 +1,5 @@
 <h2 align="center">
-  <a href="https://alexandradanca.github.io/ZRestaurant/index.html#navbar-placeholder" target="_blank">Z Restaurant</a>
+ 🍜 <a href="https://alexandradanca.github.io/ZRestaurant/index.html#navbar-placeholder" target="_blank">Z Restaurant</a>
 </h2>
 
 <p>This is a restaurant presentation web page. </br>It was created during front-end learning journey</p>
